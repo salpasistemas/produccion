@@ -59,8 +59,10 @@
             top: 0;
             text-decoration: none;
             color: var(--text-color);
-            flex-basis: calc(25% - 2rem);
+            flex-basis: calc(30% - 2rem);
             display: flex;
+            min-width: 280px;
+            max-width: 350px;
             flex-direction: column;
         }
         .card:hover {
@@ -81,11 +83,8 @@
 
        .card-title {
            font-size: 1.1rem;
-           font-weight: 600;
            text-align: center;
-           margin: 0;
            line-height: 1.4;
-           word-break: break-word; /* permite cortar palabras largas */
        }
 
         @media (max-width: 768px) {
