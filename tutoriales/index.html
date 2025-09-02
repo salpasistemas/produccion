@@ -78,11 +78,21 @@
             flex-direction: column;
             flex-grow: 1;
         }
+
         .card-title {
-            font-size: 1.2rem;
-            margin: 0;
+            font-size: 1rem; 
             font-weight: 600;
+            margin: 0;
+            line-height: 1.4;
+            text-align: center;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+
         @media (max-width: 768px) {
             .container {
                 margin: 2rem auto;
